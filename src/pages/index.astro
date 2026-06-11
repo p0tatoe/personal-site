@@ -1,11 +1,33 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+    <body>
+        <h1>Michael Lee</h1>
+
+        <p>
+            I am a recent CS grad from Georgia Tech. I am currently based in
+            Boston, MA.
+        </p>
+        <p>
+            Some of my personal projects include:
+            <ul>
+                <li>
+                    <a href="/free-blocker">Free Blocker</a>: A website blocker
+                    for Android that uses DNS filtering over QUIC. Written in
+                    Kotlin and Rust
+                </li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+            </ul>
+        </p>
+
+        <h1>Contact Me</h1>
+        <p>
+            You can reach me via email at: <a
+                href="mailto:your.email@example.com">your.email@example.com</a
+            >
+        </p>
+    </body>
 </Layout>
