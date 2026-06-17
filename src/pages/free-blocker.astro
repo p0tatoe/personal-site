@@ -9,16 +9,14 @@ import Layout from "../layouts/Layout.astro";
         <p>Free Blocker is an Android app that blocks websites.</p>
         <p>Users can manually block websites, or load in blocklists.</p>
         <p>
-            Free Blocker works through DNS filtering. DNS queries are
-            intercepted by a local VPN and validated against the user's list of
-            blocked websites.
-        </p>
+            Free Blocker works through DNS filtering. When a user attempts to
+            visit a blocked site, they will be met with a browser error. 
         <p>
             Free Blocker uses AdGuard's DNS server (94.140.14.14) and connects
             through DoQ (DNS over QUIC).
         </p>
         <p>
-            The local VPN is written in Rust, and the rest of the app is written
+            The filtering and DoQ happens in Rust, while the rest of the app is written
             in Kotlin.
         </p>
         <p>
@@ -26,6 +24,9 @@ import Layout from "../layouts/Layout.astro";
             available on <a href="https://github.com/p0tatoe/free-blocker">
                 Github</a
             >.
+        </p>
+        <p>
+            View our privacy policy <a href="/free-blocker-privacy">here</a>
         </p>
     </body>
 </Layout>
